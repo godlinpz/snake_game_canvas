@@ -1,0 +1,81 @@
+:root
+{
+    --empty-color: black;
+ 
+    --green-color: green;
+    --blue-color: blue;
+    --white-color: yellow;
+
+    --snake-head-color: red;
+    --snake-green-color: green;
+    --snake-blue-color: blue;
+    --snake-white-color: yellow;
+
+    --game-border-color: #666;
+
+    --cell-border-color: #222;
+    --cell-bg-color: black;
+
+    --snake-bg-color: white;
+}
+
+
+.game
+{
+    border: 2px solid var(--game-border-color);
+    background-color: var(--cell-bg-color);
+}
+
+.game-cell
+{
+    border: 1px solid var(--cell-border-color);
+    width: 20px;
+    height: 20px;
+    background-color: var(--cell-bg-color);
+}
+
+.game-row
+{
+    display: flex;
+    align-content: stretch;
+}
+
+.game-cell[data-cell-type='head'], .game-cell[data-cell-type='snake-head']
+{
+    background: var(--snake-head-color);
+}
+
+.game-cell[data-cell-type='green'], .game-cell[data-cell-type='snake-green']
+{
+    background: var(--green-color);
+}
+
+.game-cell[data-cell-type='blue'], .game-cell[data-cell-type='snake-blue']
+{
+    background: var(--blue-color);
+}
+
+.game-cell[data-cell-type='white'], .game-cell[data-cell-type='snake-white']
+{
+    background: var(--white-color);
+}
+
+.game-cell[data-cell-type='snake-head']
+{
+    border-radius: 50%;
+}
+
+.game-cell[data-cell-type='snake-green']
+{
+    border-radius: 50%;
+}
+
+.game-cell[data-cell-type='snake-blue']
+{
+    border-radius: 50%;
+}
+
+.game-cell[data-cell-type='snake-white']
+{
+    border-radius: 50%;
+}
